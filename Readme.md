@@ -1,8 +1,10 @@
-# Play Wave 🎵🌊
+<div align="center">
 
+# Play Wave 🎵🌊
+</div>
 Welcome to Play Wave, an interactive and visually appealing video player built with HTML, CSS, and JavaScript!
 
-![Play Wave Demo](https://img.shields.io/badge/Demo-Live-brightgreen?style=for-the-badge)
+<!-- ![Play Wave Demo](https://img.shields.io/badge/Demo-Live-brightgreen?style=for-the-badge) -->
 
 ## 🚀 Features
 
