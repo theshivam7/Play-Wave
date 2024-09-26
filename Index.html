@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayWave Video Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="header-content">
+                <div class="logo">PlayWave</div>
+                <nav>
+                    <a href="#" class="tab active">Home</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-content" role="main">
+            <div class="container hero">
+                <h1>PlayWave Video Player</h1>
+                
+                <div id="file-select">
+                    <label for="video-file" class="file-select-button">Choose a video file</label>
+                    <input type="file" id="video-file" accept="video/*">
+                </div>
+
+                <div id="video-container" class="video-container">
+                    <video id="myVideo">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="controls">
+                        <div class="progress-bar">
+                            <div class="progress-bar-filled"></div>
+                        </div>
+                        <div class="buttons-bar">
+                            <button id="playPause" class="control-button">
+                                <svg viewBox="0 0 24 24"><path fill="#fff" d="M8 5v14l11-7z"/></svg>
+                            </button>
+                            <div class="volume-control">
+                                <button id="mute" class="control-button">
+                                    <svg viewBox="0 0 24 24"><path fill="#fff" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                </button>
+                                <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+                            </div>
+                            <div class="time-display">
+                                <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                            </div>
+                            <div class="right-controls">
+                                <select id="playbackSpeed" class="control-button">
+                                    <option value="0.5">0.5x</option>
+                                    <option value="0.75">0.75x</option>
+                                    <option value="1" selected>Normal</option>
+                                    <option value="1.25">1.25x</option>
+                                    <option value="1.5">1.5x</option>
+                                    <option value="2">2x</option>
+                                </select>
+                                <button id="fullscreen" class="control-button">
+                                    <svg viewBox="0 0 24 24"><path fill="#fff" d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ by <a href="https://www.linkedin.com/in/theshivam7/" target="_blank">Shivam</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
